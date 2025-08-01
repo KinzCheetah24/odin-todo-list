@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.content {
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 10vw 90vw;
+    grid-template-rows: 10vh 90vh;
+}
+
+.content .title {
+
+    grid-column: 1 / 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aquamarine;
+}
+
+.content .projects-div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: blue;
+}
+
+.content .projects-div .add-new-project {
+    height: 5vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    border-bottom: 1px solid black;
+}
+
+.content .project-content {
+    background-color: blueviolet;
+}
