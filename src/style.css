@@ -6,8 +6,6 @@
 }
 
 .content {
-    height: 100vh;
-
     display: grid;
 
     grid-template-columns: 10vw 90vw;
@@ -50,6 +48,45 @@
     border-bottom: 1px solid black;
 }
 
-.content .project-content {
+.content .project-content-div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+
     background-color: blueviolet;
+}
+
+.content .project-content-div .add-new-todo {
+    height: 5vh;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: 20px;
+}
+
+.content .project-content-div .project-content {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 50px;
+}
+
+.content .project-content-div .project-content .todo {
+    height: 100px;
+    width: 400px;
+
+    justify-self: center;
+    align-self: center;
+
+    background-color: white;
+}
+
+.notShow {
+    display: none;
 }

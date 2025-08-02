@@ -1,12 +1,13 @@
 export {Todo};
 
 class Todo {
-    constructor(title, description, dueDate, priority, notes = null) {
+    constructor(title, description, dueDate, priority, notes = null, done = false) {
         this._title = title;
         this._description = description;
         this._dueDate = dueDate;
         this._priority = priority;
         this._notes = notes;
+        this._done = done;
     }
 
     get title() {
@@ -29,6 +30,10 @@ class Todo {
         return this._notes;
     }
 
+    get done() {
+        return this._done;
+    }
+
     set title(title) {
         this._title = title;
     }
@@ -47,5 +52,9 @@ class Todo {
 
     set notes(notes) {
         this._notes = notes;
+    }
+
+    set done(done) {
+        this._done = done;
     }
 };
